@@ -67,8 +67,8 @@ nav ul li a:hover {
     color: #c9a96e;
 }
 
-//The banner overlay effect for the introduction 
-
+/* The banner overlay effect for the introduction section that is supposed 
+to be clicked */
 .banner-wrapper {
     position: relative;
     cursor: pointer;
