@@ -25,7 +25,12 @@
 
         <!-- INTRODUCTION -->
         <section id="home" class="intro">
-            <img src="law-pics/logo-photo.jpg" alt="Joseph and Agwenyi Advocates office on Kaunda Street" class="intro-img">
+            <div class="banner-wrapper" id="banner-wrapper">
+                <img src="law-pics/logo-photo.jpg" alt="Joseph and Agwenyi Advocates office on Kaunda Street" class="intro-img">
+                <div class="banner-overlay">
+                    <p>Click here to reveal picture. :-] </p>
+                </div>
+            </div>
             <div class="intro-content">
                 <p class="intro-tag">Advocates &middot; Town House &middot; Kaunda Street, Nairobi</p>
                 <h1>Justice. Integrity. Expert Legal Counsel.</h1>
@@ -69,6 +74,22 @@
             </div>
         </section>
 
+        <!-- CONSULTATION CHECKLIST -->
+        <section id="checklist" class="checklist">
+            <p class="section-label">Prepare for your visit</p>
+            <h2>Consultation Checklist</h2>
+            <p class="checklist-sub">Jot down questions you'd like to raise during your consultation.</p>
+
+            <div class="checklist-input-row">
+                <input type="text" id="checklist-input" placeholder="e.g. What documents should I bring?">
+                <button type="button" id="checklist-add-btn">Add</button>
+            </div>
+
+            <ul class="checklist-list" id="checklist-list">
+                <!-- Items added here by JavaScript -->
+            </ul>
+        </section>
+
         <!-- CONTACT -->
         <section id="contact" class="contact">
             <div class="contact-info">
@@ -79,12 +100,13 @@
                 <p class="contact-detail"><strong>Email:</strong> info@josephagwenyi.co.ke</p>
                 <p class="contact-note">We welcome emails and office visits. Feel free to reach out or come see us during working hours.</p>
             </div>
-            <div class="contact-form">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Your email address">
-                <textarea placeholder="Your message"></textarea>
-                <button type="button">Send Message</button>
-            </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" id="contact-name" placeholder="Your name">
+                    <input type="email" id="contact-email" placeholder="Your email address">
+                    <textarea id="contact-message" placeholder="Your message"></textarea>
+                    <button type="submit">Send Message</button>
+                    <p id="contact-feedback" class="contact-feedback"></p>
+                </form>
         </section>
 
     </main>
