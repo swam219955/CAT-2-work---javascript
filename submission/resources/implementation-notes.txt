@@ -1,0 +1,31 @@
+So, 
+1. There is a loop rendered dynamic content in the practice areas section, where
+ Practice area data (name + description) is stored in an array of objects in 
+script.js. The array is looped through using the forEach() and 
+each practice card is built dynamically with createElement() and
+appendChild(), then inserted into the #pracitce-grid container
+in the DOM.
+
+2.In the consultation checklist there is Add & remove elements. 
+A text input and "Add" button lets the users type in a question and add
+it to a checklist.Each new item is created with createElement(), given its
+own "remove" button and appended to the list with appendChild().
+Clicking on it remives the specific item from the page using that remove() command.
+
+3.Form handling with validation feedback present in the Contact form.
+Here we use event.preventDefault() to stop the default page from reloading on summit.
+Js reads each field's value, checks that no field is empty and that the email matches
+a valid email pattern and writes feedback directly to the page using textContent if 
+conditionsare not met or a succesful confirmation message.
+
+4. Persistent state with localStorage  on the Checklist persistence
+Checklist items are saved to localStorage as a JSON string every time one
+is added or removed, using JSON.stringify() and JSON.parse(). On page
+load, any previously saved items are read back from localStorage and
+re-rendered, so the checklist survives a page refresh.
+
+5. Click-to-reveal banner on the banner at the heading
+The homepage banner image has a click event listener. Clicking it toggles
+a "revealed" class on the hero section using classList.toggle(), which
+fades in a caption box with details about the firm's location, and fades
+out a "click to reveal" hint at the same time.
